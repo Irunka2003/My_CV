@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume/Junior QA enginer</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li
+.resume .resume_left .language_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name
+.resume .resume_left .language_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress
+.resume .resume_left .language_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per
+.resume .resume_left .language_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span 
+.resume .resume_left .language_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  background: #0bb5f4;
+}
+</style>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="resume">
+   <div class="resume_left">
+     <div class="resume_profile">
+       <img src="foto.png" alt="profile_pic">
+     </div>
+     <div class="resume_content">
+       <div class="resume_item resume_info">
+         <div class="title">
+           <p class="bold">Boretska Iryna</p>
+           <p class="regular">Junior QA enginer</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fas fa-map-signs"></i>
+             </div>
+             <div class="data">
+               Ivano-Frankivsk <br /> Ukraine
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-mobile-alt"></i>
+             </div>
+             <div class="data">
+               +380 99 29 88 204
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data">
+               ipunka2003@gmail.com
+             </div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">Language</p>
+         </div>
+         <ul>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               English language - A2,Pre-Intermediate
+             </div>
+           </div>
+           </li>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               Ukrainian language - Native
+             </div>
+           </div>
+           </li>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               Russian language - Fluent
+             </div>
+           </div>
+           </li>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+              Polish language - A2, Pre-Intermediate
+            </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">Skill's</p>
+         </div>
+         <ul>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               Confident user of 1C program 
+             </div>
+           </div>
+           </li>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               QA theoretical knowledge, manual testing
+             </div>
+           </div>
+           </li>
+           <li>
+            <div class="data">
+             <div class="skill_name">
+               Create test cases, checklists, bug reports and test summary reports
+             </div>
+           </div>
+           </li>
+           <li>
+            <div class="data">
+             <div class="skill_name">
+               Work to JIRA
+             </div>
+           </div>
+           </li>
+               <li>
+            <div class="data">
+             <div class="skill_name">
+               Work to Asana 
+             </div>
+           </div>
+           </li>
+           <li>
+             <div class="data">
+             <div class="skill_name">
+               Basic SQL
+             </div>
+           </div>
+           </li>
+           <li>
+            <div class="data">
+             <div class="skill_name">
+               Basic HTML + CSS
+             </div>
+            </div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_social">
+         <div class="title">
+           <p class="bold">Social</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fab fa-facebook-square" aria-hidden="true"></i>
+             </div>
+             <div class="data">
+               <p class="semi_bold">Facebook</p>
+               <br> <a href="www.facebook.com/www.ipa/">Ірина Бордіяну</a>
+             </div>
+           </li>
+           <li>
+            <div class="icon">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <div class="data">
+              <p class="semi_bold">LinkedIn</p>
+              <br> <a href="https://media-exp1.licdn.com/dms/image/C4E03AQHLo6PYkrkPaw/profile-displayphoto-shrink_800_800/0/1655180461236?e=1668038400&v=beta&t=nuusvSni4oEK1lMkwQ7YSwJVjYjiqVEYGTi4_wnn0gw">Iryna Boretska</a>
+            </div>
+          </li>
+         </ul>
+       </div>
+     </div>
+    </div>
+ <div class="resume_right">
+    <div class="resume_about">
+    <div class="resume_item resume_about">
+        <div class="title">
+           <p class="bold">Description</p>
+         </div>
+        <p> I am looking for a job to start in the IT sphere to gain new knowledge and experience. At the last place of work I have experience in personnel management: selection and placement of specialists, ability to manage conflict situations. I also have experience working with the 1C program, together with the programmer I tested new features of the 1C program and became interested in this field.</p>
+    </div>
+    <div class="resume_work">
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Work Experience</p>
+         </div>
+        <ul>
+            <li>
+                <div class="date"> 07. 2022 - 08. 2022 </div> 
+                <div class="info">
+                     <p class="semi-bold">Junior Software Tester</p> 
+                  <p>Courses BeQa Today working on Web site testing
+                  <br>www.y8.com and www.dust.foundation
+                <br>Requrement and specification analysis, decomposition, create test documentation (test cases, bug report, test log, test summary reports), manual testing (functional, regression, cross-browser, cross-device, localization).</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">07. 2017 - 11. 2019</div>
+              <div class="info">
+                     <p class="semi-bold">Administrator of the organization</p> 
+                  <p>I received a promotion to the store administrator, I had up to 10 people under my command. I was responsible for accounting, work with invoices, drawing up work schedules, I was responsible for organizing the work of the staff. </p>
+                </div>
+            </li>
+            <li>
+              <div class="date">01. 2017 - 06. 2022</div>
+              <div class="info">
+                     <p class="semi-bold">Food seller </p> 
+                  <p>Worked as a private entrepreneur in the grocery store "Halyckiy"</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">03. 2016 - 12. 2016</div>
+              <div class="info">
+                     <p class="semi-bold">Hotline operator</p> 
+                  <p>Worked at "Idea Bank" LLC in the call-center department</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">01. 2015 - 08. 2015</div>
+              <div class="info">
+                     <p class="semi-bold">Waiter </p> 
+                  <p>Worked as a private entrepreneur in the cafe-bar "Coral"</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="resume_education">
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Education</p>
+         </div>
+      <ul>
+            <li>
+                <div class="date">01. 2022 - 08.2022</div> 
+                <div class="info">
+                  <p>courses for BeQa Today, Junior Software Tester</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">10. 2021-11. 2021</div>
+              <div class="info">
+                  <p> courses on the Prometheus website "Fundamentals of software testing"</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2015 - 2017</div>
+              <div class="info">
+                  <p> Ternopil National University of Economics, specialty Financial Management, qualification Master of Finance and Credit</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="resume_hobby">
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Interests</p>
+         </div>
+       <ul>
+         <li><i class="fas fa-book"></i></li>
+         <li><i class="fas fa-gamepad"></i></li>
+         <li><i class="fas fa-music"></i></li>
+         <li><i class="fab fa-pagelines"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
